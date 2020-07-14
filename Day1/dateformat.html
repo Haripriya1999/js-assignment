@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Cureent date in various format</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <script>
+            var today = new Date();
+var dd = today.getDate();
+
+var mm = today.getMonth()+1; 
+var yyyy = today.getFullYear();
+if(dd<10) 
+{
+    dd='0'+dd;
+} 
+
+if(mm<10) 
+{
+    mm='0'+mm;
+} 
+today = mm+'-'+dd+'-'+yyyy;
+document.write(today+"<br>");
+today = mm+'/'+dd+'/'+yyyy;
+document.writeln(today+"<br>");
+today = dd+'-'+mm+'-'+yyyy;
+document.writeln(today+"<br>");
+today = dd+'/'+mm+'/'+yyyy;
+document.writeln(today+"<br>");
+</script>
+    </body>
+</html>
